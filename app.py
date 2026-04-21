@@ -4,7 +4,7 @@ import re
 
 # --- [1. 설정 영역] ---
 # 발급받으신 Gemini API 키를 여기에 입력하세요
-GEMINI_API_KEY = "AIzaSyA7P6zK88idFjqGzKU-eX8UM_SvwJB6QMI"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('models/gemini-2.5-flash')
